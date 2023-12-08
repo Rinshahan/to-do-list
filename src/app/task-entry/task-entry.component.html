@@ -1,0 +1,20 @@
+<div class="task-entry">
+  <h2>Enter Task</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="task.name" [ngModelOptions]="{ standalone: true }" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="task.discription" [ngModelOptions]="{ standalone: true }"></textarea>
+
+    <label for="priority">Priority:</label>
+    <select id="priority" [(ngModel)]="task.priority" [ngModelOptions]="{ standalone: true }" required>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+
+    <button type="submit" (click)="addTask()">Add Task</button>
+    <button type="button" (click)="goToList()">Go to Task List</button>
+  </form>
+</div>

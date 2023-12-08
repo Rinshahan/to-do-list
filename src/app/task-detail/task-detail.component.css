@@ -1,0 +1,17 @@
+.task-detail {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+a {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}

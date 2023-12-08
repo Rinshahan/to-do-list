@@ -1,0 +1,21 @@
+<!-- <div class="task-detail">
+  <h2>Task Detail</h2>
+  <div>
+    <p><span class="label">Name:</span> {{ task.name }}</p>
+    <p><span class="label">Description:</span> {{ task.discription }}</p>
+    <p><span class="label">Status:</span> {{ task.status }}</p>
+    <p><span class="label">Priority:</span> {{ task.priority }}</p>
+  </div>
+  <button (click)="goToList()">Go to Task List</button>
+</div> -->
+<div class="task-detail">
+  <h2>Task Detail</h2>
+  <div *ngIf="task">
+    <p><span class="label">Name:</span> {{ task.name }}</p>
+    <p><span class="label">Description:</span> {{ task.discription }}</p>
+    <p><span class="label">Status:</span> {{ task.status==='completed'? 'completed' : 'pending' }}</p>
+    <p><span class="label">Priority:</span> {{ task.priority }}</p>
+
+  </div>
+  <button (click)="goToList()">Go to Task List</button>
+</div>
